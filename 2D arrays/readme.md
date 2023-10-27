@@ -66,5 +66,26 @@ v => name of vector
 <!-- customiaz  -->
 
 
-vector<vector<int>>arr(row size,vector<int>(4));
+vector<vector<int>>arr(row size,vector<int>(4,0));
 here vector<int>(4)=> means size of column ;
+all the values will be assign with 0
+
+
+home work => 
+sort 0's and 1's one d array
+
+movve -ve no to one side of array
+
+find duplicate of an array
+
+find missing ele in array
+
+find first repeating in an element
+
+find common elements in 3 arrays
+
+find factorial of large number 
+
+sprial print 
+
+wave print 
