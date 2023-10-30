@@ -30,7 +30,7 @@ I have 3 methods in my mind that is
 2) XOR method if same number have XOR == 0 then its duplicate
 3) MAP using Unordered Map or MAP 
 4) Sort the array and travese it 
-
+5) Visted Mark using INdex
 I will use all method 
 
 */
@@ -65,4 +65,42 @@ int main(){
     }
     */
 
+/*
+Sort method:
+
+
+    sort(nums.begin(),nums.end());
+    for(int i=0;i<nums.size();i++){
+        if(num[i]==nums[i+1]){
+            cout<<"Dupliate number is"<<nums[i]<<" ";
+            break;
+        }
+
+    }
+*/
+
+/*
+Visted marking : 
+
+    In this i will mark the index as visted as 
+    array is from 1 to N 
+        N => Size of array 
+    for example : N=4
+    that means in array all elements are from 1 to 4 == [1,2,2,4];
+    here 2 is the repating ele then if mark this index as -ve then and and that index again found negative means its duplicate elese i will mark as its negative 
+*/
+
+for(int i=0;i<nums.size();i++){
+    int index = abs(nums[i]);
+    // already visted
+    if(index<0){
+        cout<<"Duplicate number is"<<index<<" ";
+        break;
+    }
+    // marking negative
+    nums[index]*=-1;
+
+}
+
 }   
+
