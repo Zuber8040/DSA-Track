@@ -1,5 +1,5 @@
 /*
-First and last occurence of element in the monotonic array 
+last occurence of element in the monotonic array 
 
 */
 #include<iostream>
@@ -17,11 +17,12 @@ int first_occurence(vector<int>v,int target){
         if(v[mid]==target){
         // store the index and search on left side
             ans=mid;
-            e=mid-1;
+            s=mid+1;
         }
         else if(target>v[mid])
+            e=mid-1;
+        else 
             s=mid+1;
-        else e = mid-1;
     }   
     return ans;
 }

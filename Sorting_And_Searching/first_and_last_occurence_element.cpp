@@ -29,5 +29,15 @@ int first_occurence(vector<int>v,int target){
 int main(){
     vector<int>v = {1,3,3,3,3,3,3,4,4,4,4,4,6,7,9};
     int target=4;
-    cout<<"ANs is "<<first_occurence(v,target);
+    cout<<"Ans is "<<first_occurence(v,target);
 }
+
+
+/*
+Homework 
+    1)find pivot using binary search
+    2)search in roated and sorted array
+    3) squareRoot using BInary Search
+    4) Peak element in mountain array
+      
+*/
